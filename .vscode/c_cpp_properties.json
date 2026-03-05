@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F411_CPP",
+            "includePath": [
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+                "${workspaceFolder}/Drivers/CMSIS_Device/Include",
+                "${workspaceFolder}/Drivers/CMSIS_Core/CMSIS/Core/Include",
+                "${workspaceFolder}/Middlewares/FreeRTOS/include",
+                "${workspaceFolder}/Middlewares/FreeRTOS/portable/GCC/ARM_CM4F"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "STM32F411xE"
+            ],
+            "compilerPath": "C:/Users/pyoou/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

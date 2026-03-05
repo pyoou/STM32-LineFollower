@@ -1,0 +1,14 @@
+CompileFlags:
+  Add:
+    - "-DUSE_HAL_DRIVER"
+    - "-DSTM32F411xE"
+    - "-I./Core/Inc"
+    - "-I./Drivers/STM32F4xx_HAL_Driver/Inc"
+    - "-I./Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+    - "-I./Drivers/CMSIS_Device/Include"
+    - "-I./Drivers/CMSIS_Core/CMSIS/Core/Include"
+    - "-I./Middlewares/FreeRTOS/include"
+    - "-I./Middlewares/FreeRTOS/portable/GCC/ARM_CM4F"
+    - "-mcpu=cortex-m4"
+    - "-mthumb"
+    - "-mfloat-abi=hard"
