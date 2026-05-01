@@ -40,9 +40,14 @@ Release/
 *.d
 *.su
 
-# Pliki binarne (Wgrywane na mikrokontroler)
+# Pliki binarne 
 *.elf
 *.bin
 *.hex
 *.map
 *.lst
+
+# Specyfika ide i Systemu
+.cache/
+.idea/
+cmake/
