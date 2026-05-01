@@ -16,8 +16,8 @@ void FSM_Update(PID_Controller *pid, Motor_t *left_motor, Motor_t *right_motor)
   {
   case STATE_IDLE:
     // Pit stop motors
-    // Motor_Stop(left_motor);
-    // Motor_Stop(right_motor);
+    Motor_Stop(left_motor);
+    Motor_Stop(right_motor);
 
     Blink_Process(500);
     // HAL_Delay(50);
