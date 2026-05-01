@@ -51,3 +51,7 @@ Release/
 .cache/
 .idea/
 cmake/
+
+# Clangd formating
+.clang-format
+.clang-tidy
