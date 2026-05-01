@@ -1,0 +1,48 @@
+# =========================
+# Systemy operacyjne (Windows / Mac)
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# =========================
+# Środowisko VS Code
+# =========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+*.code-workspace
+
+# =========================
+# STM32CubeMX / CubeIDE
+# =========================
+.mxproject
+*.bak
+*.ioc.bak
+
+# =========================
+# PlatformIO (Jeśli używasz)
+# =========================
+.pio/
+
+# =========================
+# Pliki wynikowe kompilacji (Build artifacts)
+# =========================
+build/
+Debug/
+Release/
+
+# Pliki obiektowe i zależności
+*.o
+*.d
+*.su
+
+# Pliki binarne (Wgrywane na mikrokontroler)
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
