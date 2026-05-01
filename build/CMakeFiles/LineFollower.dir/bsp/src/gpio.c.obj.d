@@ -31,4 +31,5 @@ CMakeFiles/LineFollower.dir/bsp/src/gpio.c.obj: /workspace/bsp/src/gpio.c \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h

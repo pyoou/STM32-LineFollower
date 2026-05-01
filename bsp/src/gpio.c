@@ -3,7 +3,6 @@
 //
 
 #include "gpio.h"
-#include "stm32f4xx_hal.h"
 
 void BSP_GPIO_Init(GPIO_TypeDef *port, uint16_t pin, uint32_t mode,
                    uint32_t pull, uint32_t speed)
@@ -17,6 +16,30 @@ void BSP_GPIO_Init(GPIO_TypeDef *port, uint16_t pin, uint32_t mode,
   GPIO_InitStruct.Pull = pull;
   GPIO_InitStruct.Speed = speed;
   HAL_GPIO_Init(port, &GPIO_InitStruct);
+}
+
+bool IsButtonPressed(void)
+{
+  static uint32_t last_press_time = 0;
+  static bool is_handed = false;
+  uint32_t current_time = HAL_GetTick();
+
+  if (HAL_GPIO_ReadPin(BUTTON_GPIO, BUTTON_PIN) == GPIO_PIN_RESET)
+  {
+    if (!is_handed && (current_time - last_press_time > 50))
+    {
+      is_handed = true;
+      last_press_time = current_time;
+      return true;
+    }
+  }
+  else
+  {
+    is_handed = false;
+    last_press_time = current_time;
+  }
+
+  return false;
 }
 
 void BSP_RCC_CLK_ENABLE(GPIO_TypeDef *port)

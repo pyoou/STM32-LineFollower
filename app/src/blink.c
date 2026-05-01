@@ -22,7 +22,7 @@ void Blink_Init(void)
 
 void Key_Init(void)
 {
-  BSP_GPIO_Init(GPIOA, GPIO_PIN_0, GPIO_MODE_OUTPUT_PP, GPIO_PULLUP,
+  BSP_GPIO_Init(GPIOA, GPIO_PIN_0, GPIO_MODE_INPUT, GPIO_PULLUP,
                 GPIO_SPEED_LOW);
 }
 

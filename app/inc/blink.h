@@ -12,7 +12,9 @@
 #ifndef LINEFOLLOWER_BLINK_H
 #define LINEFOLLOWER_BLINK_H
 
+#include "gpio.h"
 #include "stm32f4xx_hal.h"
+
 
 /**
  * @brief Initialize led blinking periferials for PC13

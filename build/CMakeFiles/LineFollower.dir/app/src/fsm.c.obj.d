@@ -1,5 +1,6 @@
 CMakeFiles/LineFollower.dir/app/src/fsm.c.obj: /workspace/app/src/fsm.c \
  /workspace/app/inc/fsm.h /workspace/app/inc/blink.h \
+ /workspace/bsp/inc/gpio.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  /workspace/bsp/inc/stm32f4xx_hal_conf.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -32,6 +33,7 @@ CMakeFiles/LineFollower.dir/app/src/fsm.c.obj: /workspace/app/src/fsm.c \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
  /workspace/app/inc/motor.h /workspace/bsp/inc/pwm.h \
  /workspace/app/inc/pid.h /workspace/app/inc/sensor.h \
  /workspace/bsp/inc/adc.h

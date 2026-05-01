@@ -14,6 +14,10 @@
 
 // Include STM32 HAL
 #include "stm32f4xx_hal.h"
+#include <stdbool.h>
+
+#define BUTTON_GPIO GPIOA
+#define BUTTON_PIN GPIO_PIN_0
 
 /**
  * @brief Simplified initialization for GPIOs, included with RCC
@@ -31,6 +35,13 @@
  */
 void BSP_GPIO_Init(GPIO_TypeDef *port, uint16_t pin, uint32_t mode,
                    uint32_t pull, uint32_t speed);
+
+/**
+ * @brief
+ *
+ * @return GPIO_PinState
+ */
+bool IsButtonPressed(void);
 
 /**
  * @brief Automated RCC Clock initialization for GPIOs

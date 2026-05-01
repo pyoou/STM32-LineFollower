@@ -201,7 +201,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/LineFollower.dir/drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj"
   "CMakeFiles/LineFollower.dir/drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj.d"
   "LineFollower.elf"
-  "LineFollower.elf.manifest"
   "LineFollower.pdb"
 )
 

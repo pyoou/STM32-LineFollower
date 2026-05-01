@@ -1,5 +1,6 @@
 CMakeFiles/LineFollower.dir/app/src/blink.c.obj: \
  /workspace/app/src/blink.c /workspace/app/inc/blink.h \
+ /workspace/bsp/inc/gpio.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  /workspace/bsp/inc/stm32f4xx_hal_conf.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -32,4 +33,4 @@ CMakeFiles/LineFollower.dir/app/src/blink.c.obj: \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  /workspace/drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- /workspace/bsp/inc/gpio.h
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h

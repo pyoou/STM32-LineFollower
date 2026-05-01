@@ -2,9 +2,9 @@
 
 #define BASE_SPEED 4000
 
-static RobotState_t current_state = STATE_RUNNING;
+static RobotState_t current_state = STATE_IDLE;
 
-void FSM_Init(void) { current_state = STATE_RUNNING; }
+void FSM_Init(void) { current_state = STATE_IDLE; }
 
 void FSM_SetState(RobotState_t new_state) { current_state = new_state; }
 
@@ -23,22 +23,13 @@ void FSM_Update(PID_Controller *pid, Motor_t *left_motor, Motor_t *right_motor)
     // HAL_Delay(50);
 
     // Waiting for button press PA0 [KEY]
-    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET)
+    if (IsButtonPressed() == true)
     {
-      HAL_Delay(50); // Debouncing
+      PID_Reset(pid);
 
-      if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET)
-      {
-        while (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET)
-          ;
-        HAL_Delay(50);
+      HAL_Delay(500);
 
-        PID_Reset(pid);
-
-        HAL_Delay(500);
-
-        FSM_SetState(STATE_RUNNING);
-      }
+      FSM_SetState(STATE_RUNNING);
     }
     break;
 
@@ -79,7 +70,7 @@ void FSM_Update(PID_Controller *pid, Motor_t *left_motor, Motor_t *right_motor)
     break;
 
   default:
-    FSM_SetState(STATE_RUNNING);
+    FSM_SetState(STATE_IDLE);
     break;
   }
 }
